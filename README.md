@@ -47,7 +47,7 @@ Create user with read/write access:
 
 *Make required changes in settings.json* <br />
 / *change mongo settings to the before specified values*<br />
-/ *change wallet settings to values specified in dstra.conf, if there's no dstra.conf or settings are missing, please create/edit the file with the following settings:*<br />
+/ *change wallet settings to values specified in dstra.conf, if there's no dstra.conf or settings are missing, please create/edit the file in the data directory with the following settings:*<br />
 
     server=1
     rpcuser=YOURUSERNAME
