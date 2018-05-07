@@ -5,12 +5,7 @@ An open source block explorer written in node.js.
 
 ### See it in action
 
-*  [Jumbucks](http://explorer.getjumbucks.com)
-*  [Sphere](http://sphere.iquidus.io)
-*  [SAR](http://explorer.sarcoin.info)
-*  [Vanillacoin](https://blockchain.vanillacoin.net/)
-*  [Neoscoin](http://explorer.infernopool.com/)  
-*  [C2Chain](http://c2chain.info/)
+*  [DSTRA Block Explorer](https://explorer.dstra.io)
 
 *note: If you would like your instance mentioned here contact me*
 
@@ -50,7 +45,13 @@ Create user with read/write access:
 
     cp ./settings.json.template ./settings.json
 
-*Make required changes in settings.json*
+*Make required changes in settings.json* <br />
+/ *change mongo settings to the before specified values*<br />
+/ *change wallet settings to values specified in dstra.conf, if there's no dstra.conf or settings are missing, please create/edit the file with the following settings:*<br />
+
+    server=1
+    rpcuser=YOURUSERNAME
+    rpcpassword=YOURPWD
 
 ### Start Explorer
 
@@ -103,6 +104,10 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
 Iquidus Explorer is intended to be generic so it can be used with any wallet following the usual standards. The wallet must be running with atleast the following flags
 
     -daemon -txindex
+    
+### Deploy
+
+For mapping your domain to the running explorer app please refer to this [Source](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04) about setting Nginx reverse proxy up.
 
 ### Donate
 
